@@ -1,146 +1,183 @@
-🍎 Librería UI - Apple Inspired Components
+# 🍎 Librería UI — Apple Inspired Components
 
 <div align="center">
 
-Una colección de componentes de interfaz modernos, reactivos y altamente animados, inspirados en la estética de diseño de Apple.
+**Una colección de componentes UI modernos, reactivos y altamente animados, inspirados en la estética de Apple.**
 
-Ver Demo (Link Pendiente) · Reportar Bug · Solicitar Feature
+[🚀 Ver Demo](https://libreria-ui.vercel.app/) · [🐛 Reportar Bug](../../issues) · [✨ Solicitar Feature](../../issues)
 
 </div>
 
-📖 Sobre el Proyecto
+---
 
-Libreria-UI es un proyecto enfocado en recrear la experiencia de usuario fluida y premium que caracteriza a las landing pages de productos de alta gama.
+## ✨ Vista rápida
 
-El objetivo principal es demostrar el dominio de animaciones complejas, scroll-triggers y manejo de video optimizado utilizando React y el poder de GSAP (GreenSock Animation Platform).
+* **Diseño premium** con **Tailwind CSS**
+* **Animaciones avanzadas** con **GSAP + ScrollTrigger** (parallax, timelines, fade-ins, control por scroll)
+* **Video UX**: barra de progreso sincronizada, play/pause/replay, transiciones suaves
+* **Totalmente responsivo** (mobile / tablet / desktop)
+* **Clean Code**: separación de lógica, datos y vista
 
-✨ Características Principales
+---
 
-🎨 Diseño Premium: Estilizado con Tailwind CSS para una apariencia limpia y moderna.
+## 📖 Sobre el proyecto
 
-🚀 Animaciones Avanzadas: Uso intensivo de GSAP y ScrollTrigger para efectos de parallax, fade-ins y control de línea de tiempo.
+**Librería UI** busca recrear una experiencia de usuario **fluida, premium y “product-page style”** como la de las landing pages de productos de alta gama.
 
-📱 Totalmente Responsivo: Adaptado para funcionar suavemente en móviles, tablets y escritorio.
+Este repositorio está pensado para:
 
-Clean Code: Estructura modular con separación de lógica, datos y vista.
+* Practicar y demostrar dominio de **animaciones complejas**
+* Implementar **scroll-triggered storytelling**
+* Optimizar el **manejo y reproducción de video** en React
+* Mantener una base de código **modular y escalable**
 
-🧩 Componentes Incluidos
+---
 
-El proyecto cuenta con varios módulos independientes listos para usar:
+## 🧩 Componentes incluidos
 
-1. Hero & Highlights (Highlights.jsx)
+> Cada módulo es **independiente** y está listo para integrarse.
 
-Una sección de introducción con animaciones de texto escalonadas y enlaces interactivos.
+### 1) Hero & Highlights (`Highlights.jsx`)
 
-2. Carrusel de Video (VideoCarousel.jsx)
+* Animaciones de texto escalonadas
+* Enlaces y microinteracciones
 
-Un slider complejo que incluye:
+### 2) Carrusel de video (`VideoCarousel.jsx`)
 
-Manejo de estado de reproducción de video (Play, Pause, Replay, End).
+Un slider con enfoque “Apple-like” que incluye:
 
-Barra de progreso dinámica sincronizada con el tiempo real del video.
+* Estado de reproducción: **Play / Pause / Replay / End**
+* **Barra de progreso dinámica** sincronizada con el tiempo real del video
+* Transiciones suaves entre clips
 
-Transiciones suaves entre clips.
+### 3) Galería interactiva (`ApplePhotoGallery.jsx`)
 
-3. Galería Interactiva (ApplePhotoGallery.jsx)
+* Carrusel horizontal con efecto **snap** para centrar elementos
+* Animaciones de entrada en cascada
+* Botones de navegación programáticos
 
-Un carrusel de imágenes horizontal con:
+### 4) Sección de arquitectura (`HowItWorks.jsx`)
 
-Efecto "Snap" para centrar elementos.
+* Zoom-in del chip **A17 Pro**
+* Video dentro de un frame estilo dispositivo
+* Fade-in de textos explicativos al hacer scroll
 
-Animaciones de entrada tipo cascada.
+### 5) Historia y Features (`Features.jsx`)
 
-Botones de navegación programáticos.
+* Sección narrativa con videos de fondo
+* Textos que reaccionan al scroll
 
-4. Sección de Arquitectura (HowItWorks.jsx)
+---
 
-Demostración técnica visual con:
+## 🛠️ Tecnologías
 
-Animación de zoom-in para el chip "A17 Pro".
+* **React 18**
+* **GSAP** + **ScrollTrigger**
+* **Tailwind CSS**
+* **Vite**
 
-Reproducción de video dentro de un marco (frame) de dispositivo.
+---
 
-Fade-in de textos explicativos al hacer scroll.
+## 🚀 Demo
 
-5. Historia y Features (Features.jsx)
+👉 [https://libreria-ui.vercel.app/](https://libreria-ui.vercel.app/)
 
-Sección narrativa con videos de fondo y textos que reaccionan al scroll.
+---
 
-🛠️ Tecnologías Utilizadas
+## ⚡ Instalación y uso
 
-React 18: Biblioteca principal para la interfaz.
+### Prerrequisitos
 
-GSAP: El estándar de la industria para animaciones web de alto rendimiento.
+* **Node.js**: 16+ (recomendado 18+)
+* **npm** o **yarn**
 
-Tailwind CSS: Framework de utilidades para un diseño rápido y responsivo.
+### Pasos
 
-Vite: Entorno de desarrollo ultrarrápido.
+1. **Clona el repositorio**
 
-🚀 Instalación y Uso
+```bash
+git clone https://github.com/jscamposx/Libreria-UI.git
+```
 
-Sigue estos pasos para ejecutar el proyecto en tu entorno local:
+2. **Entra al proyecto**
 
-Prerrequisitos
-
-Node.js (versión 16 o superior)
-
-npm o yarn
-
-Pasos
-
-Clonar el repositorio
-
-git clone [https://github.com/jscamposx/Libreria-UI.git](https://github.com/jscamposx/Libreria-UI.git)
-
-
-Entrar a la carpeta del proyecto
-
+```bash
 cd Libreria-UI
+```
 
+3. **Instala dependencias**
 
-Instalar dependencias
-
+```bash
 npm install
-# o si usas yarn
-yarn install
+# o
+yarn
+```
 
+4. **Inicia el servidor de desarrollo**
 
-Iniciar el servidor de desarrollo
-
+```bash
 npm run dev
+# o
+yarn dev
+```
 
+5. **Abre en tu navegador**
 
-Abrir en el navegador
-Generalmente en http://localhost:5173
+Normalmente: `http://localhost:5173`
 
-📂 Estructura del Proyecto
+---
 
+## 📂 Estructura del proyecto
+
+```txt
 src/
-├── assets/          # Imágenes y Videos
+├── assets/          # Imágenes y videos
 ├── components/      # Componentes reutilizables (VideoCarousel, etc.)
 ├── utils/           # Utilidades y constantes de animación
 ├── App.jsx          # Componente raíz
 └── main.jsx         # Punto de entrada
+```
 
+---
 
-🤝 Contribución
+## ✅ Buenas prácticas incluidas
 
-¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar las animaciones o agregar nuevos componentes:
+* Componentes **reutilizables** y **componibles**
+* Animaciones encapsuladas (helpers/constantes en `utils/`)
+* Enfoque en **rendimiento** (animaciones fluidas, scroll controlado)
+* UI pensada para **interacción real** (estado + feedback visual)
 
-Haz un Fork del proyecto.
+---
 
-Crea tu rama de feature (git checkout -b feature/NuevaAnimacion).
+## 🤝 Contribución
 
-Haz commit de tus cambios (git commit -m 'Agrega nueva sección').
+¡Las contribuciones son bienvenidas!
 
-Haz Push a la rama (git push origin feature/NuevaAnimacion).
+1. Haz un **Fork** del proyecto
+2. Crea tu rama:
 
-Abre un Pull Request.
+```bash
+git checkout -b feature/NuevaAnimacion
+```
 
-📝 Licencia
+3. Haz commit:
 
-Distribuido bajo la licencia MIT. Ver LICENSE para más información.
+```bash
+git commit -m "Agrega nueva sección"
+```
+
+4. Haz push:
+
+```bash
+git push origin feature/NuevaAnimacion
+```
+
+5. Abre un **Pull Request**
+
+---
 
 <div align="center">
-<p>Desarrollado con ❤️ por <a href="https://www.google.com/search?q=https://github.com/jscamposx">jscamposx</a></p>
+
+Hecho con ❤️ por **[jscamposx](https://github.com/jscamposx)**
+
 </div>
